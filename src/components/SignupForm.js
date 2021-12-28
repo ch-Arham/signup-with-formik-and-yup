@@ -20,7 +20,6 @@ const SignupForm = () => {
         /(?=.*[A-Za-z])(?=.*\d)(?=.*[@$!%*#?&])[A-Za-z\d@$!%*#?&]{8,}$/,
         "Minimum eight characters, at least one letter, one number and one special character"
       )
-      .min(6, "Password must be at least 6 charaters")
       .required("Password is required"),
     confirmPassword: Yup.string()
       .matches(
@@ -58,7 +57,7 @@ const SignupForm = () => {
               type="password"
             />
             <button className="btn btn-dark mt-3" type="submit">
-              Register
+              Register!!!
             </button>
             <button className="btn btn-danger mt-3 ml-3" type="reset">
               Reset
