@@ -39,8 +39,9 @@ const SignupForm = () => {
         confirmPassword: "",
       }}
       validationSchema={validate}
-      onSubmit={(values) => {
+      onSubmit={(values,{resetForm}) => {
         console.log(values);
+        resetForm()
       }}
     >
       {(formik) => (
@@ -57,7 +58,7 @@ const SignupForm = () => {
               type="password"
             />
             <button className="btn btn-dark mt-3" type="submit">
-              Register!!!
+              Register
             </button>
             <button className="btn btn-danger mt-3 ml-3" type="reset">
               Reset
