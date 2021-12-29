@@ -33,3 +33,9 @@ input.form-control, input.form-control:focus {
   
   100% {bottom:0px;}
 }
+
+@media (max-width: 600px){
+  .animated{
+    display: none;
+  }
+}
